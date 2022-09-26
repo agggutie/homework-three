@@ -1,12 +1,20 @@
 .contact{
     max-width: 1280px;
+<<<<<<< Updated upstream
     max-height: 892px;
+=======
+<<<<<<< HEAD
+    min-height: 892px;
+=======
+    max-height: 892px;
+>>>>>>> 96856f2ef83560719d1ff7fe22f1fe00a2ccead6
+>>>>>>> Stashed changes
     display: flex;
     background-color: white;
 
     .booking-wrapper{
-        width: 813px;
-        height: 992px;
+        min-width: 100px;
+        min-height: 100vh;
         margin: 0 auto;
         h1{
             font-size: 60px;
@@ -17,8 +25,8 @@
             align-items: center;
             padding-bottom: 21px;
             input{
-                width: 344px;
-                height: 58px;
+                min-width: 344px;
+                min-height: 58px;
             }
         }
     
@@ -28,8 +36,8 @@
             align-items: center;
             padding: 20px;
             input{
-                width: 80%;
-                height: 58px;
+                min-width: 650px;
+                min-height: 58px;
             }
         }
         .tri-input{
@@ -50,14 +58,14 @@
             }
         
             .mid{
-                width: 33.3%;
-                height: 58px;
+                max-width: 33.3%;
+                max-height: 58px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 input{
-                    max-width: 103px;
-                    min-height: 58px;
+                    width: 103px;
+                    height: 58px;
                 }
             }
         
@@ -103,4 +111,30 @@
                 }
         }
     }
+}
+
+@media only screen and (max-width:1000px){
+    .contact{
+        min-height: 100px;
+        .booking-wrapper{
+            .space-input{
+                min-width: 100px;
+                min-height: fit-content;
+            }
+        }
+}
+}
+@media only screen and (max-width:1000px){
+ .home
+    .imageSection{
+        .imageHolder{
+            flex-direction: column;
+            min-height: fit-content;
+
+            .image{
+        
+            }
+        }
+ }
+    
 }

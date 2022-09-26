@@ -37,16 +37,24 @@ p {
   font-family: light;
   src: url(../fonts/Proxima-Nova-Thin.otf);
 }
-.navContainer {
-  position: absolute;
-  top: 0;
-  width: 1280px;
-  height: 90px;
+.home {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  max-width: 1280px;
 }
-.navContainer nav {
+.home .heroSection {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  min-height: 500px;
+  align-self: center;
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home .heroSection nav {
   width: 980px;
   height: 90px;
   margin: 0 auto;
@@ -54,27 +62,29 @@ p {
   justify-content: center;
   align-items: center;
 }
-.navContainer nav .navLeft {
+.home .heroSection nav .navLeft {
   width: 92px;
   height: 42px;
 }
-.navContainer nav .navLeft img {
+.home .heroSection nav .navLeft img {
   width: 92px;
   height: 42px;
 }
-.navContainer nav .navRight {
+.home .heroSection nav .navRight {
   width: 888px;
   height: 42px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.navContainer nav .navRight a {
+.home .heroSection nav .navRight a {
   padding: 10px;
   letter-spacing: 2px;
   text-decoration: none;
   color: white;
 }
+<<<<<<< HEAD
+=======
 
 .home {
   display: flex;
@@ -92,12 +102,13 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+>>>>>>> 96856f2ef83560719d1ff7fe22f1fe00a2ccead6
 .home .heroSection .heroTextHolder {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1280px;
-  height: 500px;
+  min-width: 1280px;
+  min-height: 500px;
 }
 .home .heroSection .heroTextHolder .heroText {
   display: flex;
@@ -137,22 +148,23 @@ p {
 }
 .home .imageSection {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1280px;
-  height: 360px;
+  max-width: 1280px;
+  max-height: 912px;
   background-color: white;
 }
 .home .imageSection .imageHolder {
   display: flex;
   flex-direction: row;
-  width: 813px;
-  height: 304px;
+  min-width: 813px;
+  min-height: 304px;
   justify-content: space-between;
   align-items: center;
   margin-top: -104px;
 }
-.home .imageSection .image {
+.home .imageSection .imageHolder .image {
   width: 251px;
   height: 304px;
   display: flex;
@@ -160,11 +172,7 @@ p {
   justify-content: center;
   flex-direction: column;
 }
-.home .imageSection img {
-  width: 251px;
-  height: 304px;
-}
-.home .imageSection .text {
+.home .imageSection .imageHolder .image .text {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -172,15 +180,18 @@ p {
   justify-content: center;
   color: white;
 }
-.home .imageSection .imageOne {
-  font-size: 60px;
+.home .imageSection .imageHolder .image .text .imageOne {
+  width: 100px;
+  font-size: 45px;
   font-family: light;
+  display: flex;
+  justify-content: center;
 }
-.home .imageSection .imageTwo {
+.home .imageSection .imageHolder .image .text .imageTwo {
   font-size: 30px;
   font-family: light;
 }
-.home .imageSection button {
+.home .imageSection .imageHolder .image .text button {
   background-color: #79ADDC;
   padding-top: 20px;
   border-radius: 20px;
@@ -189,15 +200,41 @@ p {
   color: #fff;
 }
 
+@media only screen and (max-width: 1000px) {
+  .home {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .home .heroSection nav {
+    max-height: 10vh;
+    max-width: 10vh;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .imageSection .imageHolder {
+    flex-direction: column;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
 .contact {
   max-width: 1280px;
+<<<<<<< Updated upstream
   max-height: 892px;
+=======
+<<<<<<< HEAD
+  min-height: 892px;
+=======
+  max-height: 892px;
+>>>>>>> 96856f2ef83560719d1ff7fe22f1fe00a2ccead6
+>>>>>>> Stashed changes
   display: flex;
   background-color: white;
 }
 .contact .booking-wrapper {
-  width: 813px;
-  height: 992px;
+  min-width: 100px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 .contact .booking-wrapper h1 {
@@ -210,8 +247,8 @@ p {
   padding-bottom: 21px;
 }
 .contact .booking-wrapper .space-input input {
-  width: 344px;
-  height: 58px;
+  min-width: 344px;
+  min-height: 58px;
 }
 .contact .booking-wrapper .long-input {
   display: flex;
@@ -220,8 +257,8 @@ p {
   padding: 20px;
 }
 .contact .booking-wrapper .long-input input {
-  width: 80%;
-  height: 58px;
+  min-width: 650px;
+  min-height: 58px;
 }
 .contact .booking-wrapper .tri-input {
   max-width: 100%;
@@ -241,15 +278,15 @@ p {
   min-height: 58px;
 }
 .contact .booking-wrapper .tri-input .mid {
-  width: 33.3%;
-  height: 58px;
+  max-width: 33.3%;
+  max-height: 58px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .contact .booking-wrapper .tri-input .mid input {
-  max-width: 103px;
-  min-height: 58px;
+  width: 103px;
+  height: 58px;
 }
 .contact .booking-wrapper .tri-input .right {
   width: 33.3%;
@@ -290,6 +327,25 @@ p {
   color: #fff;
 }
 
+@media only screen and (max-width: 1000px) {
+  .contact {
+    min-height: 100px;
+  }
+  .contact .booking-wrapper .space-input {
+    min-width: 100px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .home .imageSection .imageHolder {
+    flex-direction: column;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
 .footerSection {
   display: flex;
   width: 100%;
