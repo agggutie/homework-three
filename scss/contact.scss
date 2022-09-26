@@ -1,109 +1,107 @@
 .contact{
     max-width: 1280px;
-    min-height: 992px;
+    max-height: 992px;
     display: flex;
     background-color: white;
     padding: 50px;
 
     .booking-wrapper{
-        min-width: 813px;
-        max-height: 992px;
+        width: 813px;
+        height: 992px;
         margin: 0 auto;
-    }
-
-    h1{
-        font-size: 60px;
-        font-family: light;
-    }
-    .space-input{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 21px;
-        input{
-            min-width: 344px;
-            height: 58px;
+        h1{
+            font-size: 60px;
         }
-    }
-
-    .long-input{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        input{
-            width: 80%;
-            height: 58px;
+        .space-input{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 21px;
+            input{
+                width: 344px;
+                height: 58px;
+            }
         }
-    }
-    .tri-input{
-        max-width: 100%;
-        min-height: 58px;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .left{
-        width: 33.3%;
-        height: 58px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        input{
-            max-width: 103px;
-            min-height: 58px;
+    
+        .long-input{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            input{
+                width: 80%;
+                height: 58px;
+            }
         }
-    }
-
-    .mid{
-        width: 33.3%;
-        height: 58px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        input{
-            max-width: 103px;
-            min-height: 58px;
+        .tri-input{
+            max-width: 100%;
+            max-height: 58px;
+            display: flex;
+            flex-direction: row;
+            .left{
+                width: 33.3%;
+                height: 58px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                input{
+                    max-width: 103px;
+                    min-height: 58px;
+                }
+            }
+        
+            .mid{
+                width: 33.3%;
+                height: 58px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                input{
+                    max-width: 103px;
+                    min-height: 58px;
+                }
+            }
+        
+            .right{
+                width: 33.3%;
+                height: 58px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                input{
+                    max-width: 103px;
+                    min-height: 58px;
+                }
+            }
         }
-    }
-
-    .right{
-        width: 33.3%;
-        height: 58px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        input{
-            max-width: 103px;
-            min-height: 58px;
+    
+    
+        .textBox{
+            max-width: 818px;
+            max-height: 192px;
+            display: flex;
+            padding-top: 20px;
+            input{
+                width: 818px;
+                height: 192px;
+            }
         }
-    }
-    .textBox{
-        max-width: 100%;
-        min-height: 192px;
-        display: flex;
-        padding-top: 20px;
-        input{
-            min-width: 818px;
-            min-height: 192px;
-        }
-    }
-    .button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        max-height: 60px;
-        padding-top: 37px;
-        button{
-        min-width: 813px;
-        min-height: 60px;
-        background-color: #79ADDC;
-        border-radius: 20px;
-        border: none;
-        padding: 11px 21px;
-        color: #fff;
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 818px;
+            max-height: 60px;
+            padding-top: 60px;
+                button{
+                width: 813px;
+                height: 60px;
+                background-color: #79ADDC;
+                border-radius: 20px;
+                border: none;
+                padding: 11px 21px;
+                color: #fff;
+                }
         }
     }
 }
