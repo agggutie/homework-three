@@ -1,0 +1,31 @@
+.nav{
+    max-width: 980px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.navLeft{
+    max-width: 92px;
+    max-height: 42px;
+    img{
+        width: 92px;
+        height: 42px;
+    }
+}
+a{
+    padding: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+.navRight{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
